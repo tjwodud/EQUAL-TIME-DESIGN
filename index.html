@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>평등과 다양성의 기록</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        평등과 다양성의 기록
+    </header>
+
+    <!-- 디자인 선언문 -->
+    <div id="manifesto-container">
+        <button id="toggle-manifesto">디자인 선언문 열기/닫기</button>
+        <div id="manifesto-content" style="display: none;">
+            <h2>디자인 선언문</h2>
+            <p>하나. 디자인은 누구에게나 평등해야 한다.<br>
+            나의 디자인은 특정 소수만을 위한 것이 아니라, 모두를 위한 디자인이 되어야 한다.</p>
+            <p>둘. 평등은 내가 추구하는 디자인의 첫 번째 가치다.<br>
+            모든 사람은 차별 없이 동등한 사용자로서 존중받아야 하며, 내 디자인은 그들의 권리를 보장하고, 목소리를 담아낼 수 있어야 한다.</p>
+            <p>셋. 다양성은 내가 디자인을 통해 세상을 이해하는 방법이다.<br>
+            사람들은 각기 다른 삶과 경험, 관점을 가지고 있다. 나는 그 다양한 의견을 경청하고, 내 디자인 속에 반영할 것을 약속한다.</p>
+            <p>넷. 나는 사용자들의 진정한 필요를 깊이 고민하며, 누구도 소외되지 않는 세상을 만들기 위해 디자인할 것이다.</p>
+            <p><b>디자인은 모두의 것이며, 모두를 위한 것이다.<br>
+            그리고 나는 그 가치를 매 순간 실천해 나갈 것이다.</b></p>
+        </div>
+    </div>
+
+    <div id="clock-container"></div>
+    <div class="buttons">
+        <button id="custom-time">Add Custom Time</button>
+    </div>
+
+    <div id="custom-time-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Add Custom Time</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="custom-name" placeholder="Enter name">
+            
+            <label for="datetime">Date and Time:</label>
+            <input type="datetime-local" id="custom-datetime">
+
+            <button id="save-custom-time">Save</button>
+        </div>
+    </div>
+
+    <div id="admin-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Admin Authentication</h3>
+            <label for="admin-password">Enter Admin Password:</label>
+            <input type="password" id="admin-password">
+            <button id="verify-admin">Verify</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
